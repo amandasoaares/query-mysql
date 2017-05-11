@@ -3,13 +3,13 @@ backup="/backup/lumis/full"
 cd $backup
 NOW=$(date +"%d-%m-%Y")
 
-MUSER=backup_agent
-MPASS="manager1"
-MHOST="172.30.113.80"
+MUSER=user
+MPASS="pass"
+MHOST="IP"
 MYSQL="$(which mysql)"
 MYSQLDUMP="$(which mysqldump)"
 GZIP="$(which gzip)"
-MAIL="infra.db@buscapecompany.com","infra.operacao@buscapecompany.com"
+MAIL=email"
 MAILER="$(which mail)"
 STATUSFILE="/backup/lumis/full/statusfile.$NOW"
 
