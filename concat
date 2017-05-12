@@ -6,3 +6,9 @@ FROM   INFORMATION_SCHEMA.PROCESSLIST where command = 'sleep';
 SELECT CONCAT('KILL ',ID,';')
 FROM   INFORMATION_SCHEMA.PROCESSLIST where command = 'sleep';
 
+
+
+SELECT CONCAT('KILL ',ID,';')
+FROM   INFORMATION_SCHEMA.PROCESSLIST where command = 'sleep';
+
+
