@@ -20,7 +20,7 @@ echo "Backup report from $NOW" > $STATUSFILE ','
 #FILE=$backup/jira-$db.$NOW.sql.gz
 #mkdir -p $BACKUP/$NOW
 
-$MYSQLDUMP -u $MUSER -h $MHOST -p$MPASS --all-databases --single-transaction --routines --triggers | $GZIP > $backup/lumis-.$NOW.sql.gz
+$MYSQLDUMP -u $MUSER -h $MHOST -p$MPASS --all-databases --single-transaction --routines --triggers | $GZIP > $backup/name-.$NOW.sql.gz
  if [ "$?" -eq "0" ]; then
    echo "all-databases backup is OK" >> $STATUSFILE
 
